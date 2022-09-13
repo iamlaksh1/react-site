@@ -7,6 +7,7 @@
 }
 
 body{
+  background-image: url(../images/background.png);
   background-color:blanchedalmond;
   height: 100vh;
 }
