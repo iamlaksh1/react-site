@@ -31,7 +31,7 @@ header{
 
 ul{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly;  
 }
 
 header .logo{
@@ -46,8 +46,10 @@ ul li{
 
 ul li a {
   font-size: 0.9 rem;
+  padding: 10px 10px;
 }
 
+ul li a.active,
 ul li a:hover{
   background-color: grey;
   transition: 0.5s;
