@@ -7,8 +7,7 @@
 }
 
 body{
-  background-image: url(../images/background.png);
-  background-size: cover;
+  background-image: url(../images/background.png); 
   background-position: center;
   height: 100vh;
 }
@@ -56,3 +55,53 @@ ul li a:hover{
   border-radius: 4px;
 
 }
+
+.hamburger{
+  position: absolute;
+  right: 1.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height:21px;
+  display: none;
+}
+
+.hamburger .bar{
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px){
+  body{
+    overflow-x: hidden;
+    background-position: cover;
+  }
+
+
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+  }
+
+  ul {
+    flex-direction: column;
+    position: absolute;
+    top: 14vh;
+    right :-100%;
+    background-color: rgba(0,0,0,0.7);
+    height: 86vh;
+    width: 100%;
+    align-items: center;
+  }
+  ul li {
+    margin-right: 0px;
+  }
+
+  .menu-slide {
+    right: 0;
+    transition: right 0.3 ease-in;
+  }
+}
+
