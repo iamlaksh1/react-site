@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: "Roboto", sans-serif;
+  color: blue;
+}
+
+body{
+  background-color:blanchedalmond;
+  height: 100vh;
+}
+
+a{
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
